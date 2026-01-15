@@ -58,9 +58,9 @@ class Audio:
         try:
             for cid, part in zip(self.cid_list, self.part_list):
                 if len(self.part_list) > 1:
-                    file_path = f"{self.title}-{part}.mp3"
+                    file_path = f"{self.bvid}_{self.title}-{part}.m4a"
                 else:
-                    file_path = f"{self.title}.mp3"
+                    file_path = f"{self.bvid}_{self.title}.m4a"
 
                 if len(file_path) > 255:
                     file_path = file_path[:255]
